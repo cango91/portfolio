@@ -99,6 +99,9 @@ export default function App() {
           </section>
         </div>
       </div>
+          <div className="footer">
+            <div className="footer-line"></div>
+            Can Göloğlu, © 2023</div>
     </div>
   );
 }
