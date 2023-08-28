@@ -52,15 +52,3 @@
         font-size: 0.875rem;
     }
   }
-
-  .education-entry{
-    color: var(--secondary-green);
-    display: flex;
-    justify-content: space-between;
-    text-align: end;
-  }
-
-  .education-entry>span{
-    color: var(--tertiary-blue);
-    text-align: start;
-  }

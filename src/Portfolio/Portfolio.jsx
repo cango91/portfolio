@@ -2,7 +2,7 @@ import PortfolioGrid from './PortfolioGrid';
 import './Portfolio.css';
 const projects = [
     {
-        imgSrc: "screenshots/eye-connect2.webp",
+        imgSrc: "screenshots/eye-connect3.webp",
         heading: "eyeConnect",
         description: "A tele-medicine web-app for connecting medical professionals with specialists. Features encryption-at-rest and AI-assisted medical image classification (MEN stack, Python, TensorFlow, OpenCV, Flask, Docker)",
         details:`<ul><li>Utilized <b>MEN (MongoDB, Express, NodeJS) stack</b> with EJS (embedded javascript) and Bootstrap5 to build a highly <b>interactive and responsive tele-medicine</b> web application called eyeConnect that connects non-specialist health care providers (HCP) with ophthalmology specialists for <b>early detection of diabetes induced retinopathy (DR)</b> in <b>underserved regions</b> where access to specialized eye care may be limited.</li><li>

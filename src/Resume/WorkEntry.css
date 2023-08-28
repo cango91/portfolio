@@ -5,6 +5,7 @@
 
 .work-entry h4{
     color: var(--tertiary-blue);
+    margin-bottom: 0;
 }
 
 .work-entry ul{
@@ -25,4 +26,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.dates{
+    margin-top: 0;
+    padding-top: 0;
+    color: var(--tertiary-blue);
 }

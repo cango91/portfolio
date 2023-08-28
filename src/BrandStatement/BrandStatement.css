@@ -28,3 +28,14 @@
     bottom: calc(0% - 70px);
     z-index: 1;
   }
+
+  p.center{
+    text-align: center;
+  }
+
+
+@media (max-width: 767px) {
+    .brand-statement p{
+        text-align: left;
+    }
+  }

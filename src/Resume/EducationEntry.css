@@ -1,0 +1,23 @@
+.education-entry{
+    color: var(--secondary-green);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 1rem;
+        
+  }
+
+  .graduation-info{
+    color: var(--tertiary-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  .dates{
+    color: var(--secondary-green);
+  }
+
+  .school-info{
+    text-align: start;
+  }
