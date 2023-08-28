@@ -1,0 +1,13 @@
+.project-entry{
+    display:flex;
+}
+
+.project-title{
+    color: var(--tertiary-blue);
+    font-weight: 600;
+}
+
+.project-achievements{
+    display: flex;
+    text-align: start;
+}

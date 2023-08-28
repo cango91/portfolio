@@ -1,0 +1,26 @@
+.portfolio {
+    margin-top: 100px;
+    position: relative;
+    background-color: hsla(240, 3%, 23%, 0.5);
+    border: var(--primary-green) solid;
+    border-radius: 3rem;
+    padding: 1rem;
+    padding-top: 50px;
+    max-width: 678px;
+}
+
+.gallery {
+    border-radius: 50%;
+    border: var(--white) solid 0.15rem;
+    /* background-color: azure; */
+    background-color: var(--icon-bg);
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: absolute;
+    right: calc(50% - 1rem - 55px);
+    top: calc(0% - 70px);
+    z-index: 1;
+}

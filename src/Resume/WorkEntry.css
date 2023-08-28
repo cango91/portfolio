@@ -1,0 +1,28 @@
+.work-entry{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-entry h4{
+    color: var(--tertiary-blue);
+}
+
+.work-entry ul{
+    list-style:circle;
+    text-indent: 0;
+    text-align: start;
+}
+
+.work-entry li{
+    padding-top: 10px;
+}
+
+.work-entry li:hover{
+    list-style: disc;
+}
+
+.achievements{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

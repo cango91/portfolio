@@ -1,0 +1,46 @@
+.tech-stack{
+    margin-top: 100px;
+    position: relative;
+    background-color: hsla(240, 3%, 23%, 0.5);
+    border: var(--primary-green) solid;
+    border-radius: 3rem;
+    padding: 1rem;
+    padding-top: 50px;
+    max-width: 678px;
+  }
+  
+  .stack {
+    border-radius: 50%;
+    border: var(--white) solid 0.15rem;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: absolute;
+    right: calc(50% - 55px - 1rem);
+    top: calc(0% - 70px);
+    z-index: 1;
+  }
+  
+  .stack-grid{
+    display: flex;
+    padding-top: 1rem;
+    font-size: var(--devicon-font-size);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .stack-grid__group{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  
+  .stack-grid__group:hover .vr{
+    border-color: var(--secondary-green);
+  }
+  
+  .stack-grid__group i{
+    margin-top: 0.25rem;
+  }
