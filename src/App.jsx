@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import ReactGA from 'react-ga';
+import { useEffect, useState } from 'react';
 import ScrollSpy from './ScrollSpy/ScrollSpy';
 import BrandStatement from './BrandStatement/BrandStatement';
 import TechStack from './TechStack/TechStack';
@@ -9,16 +8,9 @@ import Contact from './Contact/Contact';
 import './App.css';
 
 export default function App() {
-  // const textRef = useRef();
   const [currentSection, setCurrentSection] = useState('brand-statement');
   useEffect(() => {
     const sectionIds = ['brand-statement', 'tech-stack', 'portfolio', 'resumé', 'contact'];
-    // const target = textRef.current;
-    // const handleAnimationEnd = () => {
-    //   target.classList.add("no-blink");
-    // };
-    const path = window.location.hash ? window.location.hash : window.location.pathname;
-    ReactGA.pageview(path);
 
     let allowOverflow = true;
     let prevScrollY = 0;
@@ -70,11 +62,9 @@ export default function App() {
       cursor.style.top = Math.min(window.innerHeight - 250, y) + "px";
     };
 
-    // target.addEventListener("animationend", handleAnimationEnd);
     document.addEventListener("mousemove", moveCursor);
     return () => {
       document.removeEventListener("mousemove", moveCursor);
-      // target.removeEventListener("animationend", handleAnimationEnd);
       window.removeEventListener("scroll", handleScroll);
     };
   }, [currentSection]);

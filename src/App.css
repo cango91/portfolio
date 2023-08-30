@@ -36,60 +36,8 @@ body {
   z-index: 500;
 }
 
-.text-reveal__wrapper {
-  display: inline-flex;
-  justify-content: center;
-
-}
-
-.text-reveal {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  animation: reveal 0.3s linear forwards;
-}
-
-.text-reveal::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 15px;
-  height: 100%;
-  background-color: white;
-  animation: blink 0.5s infinite;
-}
-
-.no-blink::after {
-  animation: none;
-  background-color: transparent;
-}
-
 .d-flex {
   display: flex;
-}
-
-@keyframes reveal {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
 }
 
 
