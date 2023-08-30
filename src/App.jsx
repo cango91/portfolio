@@ -17,7 +17,8 @@ export default function App() {
     // const handleAnimationEnd = () => {
     //   target.classList.add("no-blink");
     // };
-    ReactGA.pageview(window.location.hash);
+    const path = window.location.hash ? window.location.hash : window.location.pathname;
+    ReactGA.pageview(path);
 
     let allowOverflow = true;
     let prevScrollY = 0;
@@ -85,7 +86,7 @@ export default function App() {
         <ScrollSpy currentSection={currentSection} />
         <div className="content">
           <section id="brand-statement">
-          <BrandStatement />
+            <BrandStatement />
           </section>
           <section id="tech-stack">
             <TechStack />
@@ -101,9 +102,9 @@ export default function App() {
           </section>
         </div>
       </div>
-          <div className="footer">
-            <div className="footer-line"></div>
-            Can Göloğlu, © 2023</div>
+      <div className="footer">
+        <div className="footer-line"></div>
+        Can Göloğlu, © 2023</div>
     </div>
   );
 }
