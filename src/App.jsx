@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import ReactGA from 'react-ga';
 import ScrollSpy from './ScrollSpy/ScrollSpy';
 import BrandStatement from './BrandStatement/BrandStatement';
 import TechStack from './TechStack/TechStack';
@@ -16,6 +17,7 @@ export default function App() {
     // const handleAnimationEnd = () => {
     //   target.classList.add("no-blink");
     // };
+    ReactGA.pageview(window.location.hash);
 
     let allowOverflow = true;
     let prevScrollY = 0;
