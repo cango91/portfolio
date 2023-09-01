@@ -6,6 +6,7 @@ import Portfolio from './Portfolio/Portfolio';
 import Resume from './Resume/Resume';
 import Contact from './Contact/Contact';
 import './App.css';
+import FixedSocial from './FixedSocial/FixedSocial';
 
 export default function App() {
   const [currentSection, setCurrentSection] = useState('brand-statement');
@@ -74,6 +75,7 @@ export default function App() {
       <div id="cursor"></div>
       <div className="container">
         <ScrollSpy currentSection={currentSection} />
+        <FixedSocial />
         <div className="content">
           <section id="brand-statement">
             <BrandStatement />

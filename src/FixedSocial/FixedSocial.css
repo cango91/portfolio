@@ -1,0 +1,31 @@
+.socials{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+
+.socials i{
+    color:var(--white);
+}
+
+.socials i:hover{
+    cursor: pointer;
+    color: var(--secondary-green);
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.socials a :visited{
+    color: inherit;
+}
+
+@media (max-width: 767px) {
+    .socials{
+        font-size: 1.2rem;
+    }
+}
